@@ -50,8 +50,8 @@ export default {
       this.error = null;
       
       try {
-        // Получаем данные с нашего бэкенд-API
-        const response = await fetch('http://localhost:3001/api/tickers');
+        // Для доступа к API сервера используем относительный URL
+        const response = await fetch('/api/tickers');
         if (!response.ok) {
           throw new Error(`Ошибка HTTP: ${response.status}`);
         }
