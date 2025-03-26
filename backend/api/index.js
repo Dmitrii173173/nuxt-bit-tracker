@@ -11,6 +11,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Корневой маршрут для проверки работоспособности
+app.get('/', (req, res) => {
+  res.json({ status: 'API is running' });
+});
+
 // Эндпоинт для получения данных о криптовалюте
 app.get('/ticker', (req, res) => {
   // Возвращаем данные в формате JSON
