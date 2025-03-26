@@ -1,10 +1,10 @@
 export default {
   // Режим Nuxt (универсальный или SPA)
-  mode: 'universal',
+  // mode: 'universal',
   
   // Порт для бэкенда
   server: {
-    port: 3001, // Отличный от фронтенда порт
+    port: process.env.PORT || 3001, // Теперь будет использоваться PORT из окружения или 3001 как запасной вариант
     host: '0.0.0.0'
   },
 
