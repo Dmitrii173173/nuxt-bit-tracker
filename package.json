@@ -1,0 +1,11 @@
+{
+  "name": "bit-tracker",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "cd backend && npm install && npm run build"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+} 
